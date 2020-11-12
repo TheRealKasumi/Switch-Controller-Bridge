@@ -38,10 +38,10 @@ Also you should be able to see the code examples of this libraries under `File -
 If that is the case, you are ready to install the software to the microcontrollers.
 
 To get the pc software you have two options.
-- Download the windows binary that I provided
+- Download the [Windows binary](https://github.com/TheRealKasumi/Switch-Controller-Bridge/releases/tag/v0.0.1) that I provided
 - Build it from the source code
 
-In case you decide for the first option, you have nothing more to do than downloading the file.
+In case you decide for the first option, you have nothing more to do than [downloading](https://github.com/TheRealKasumi/Switch-Controller-Bridge/releases/tag/v0.0.1) the file.
 If you go for the second option, install a C++ compiler of your choice (I use g++) and follow the next steps.
 
 
