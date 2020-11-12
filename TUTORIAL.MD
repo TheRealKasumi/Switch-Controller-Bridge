@@ -41,13 +41,23 @@ To get the pc software you have two options.
 - Download the windows binary that I provided
 - Build it from the source code
 
-I know that the prefered way is to build it yourself from the code.
-But since this is a tutorial for beginners, I would recommend downloading the executable directly because thats simpler. 
-But feel free to compile on your own anyway, if you want.
-Nearly all C++ compilers under Windows are supported.
-So pick your favorite one. 
+In case you decide for the first option, you have nothing more to do than downloading the file.
+If you go for the second option, install a C++ compiler of your choice (I use g++) and follow the next steps.
 
-Maybe I will go into more details here at a later point of time.
+
+## Compile the pc software
+
+Since the code should be compatible with nearly every C++ compiler under Windows, there is more than one way of doing this.
+I personally decided to go with MinGW/g++ for now. 
+But feel free to pick the compiler you want.
+
+Before you start to compile the code, make sure that the XInput library is available on your system. 
+
+Then building the code with g++ is as simple as:
+
+`g++ main.cpp serial\SerialPort.cpp controller\XInputController.cpp communication\ArduinoConnection.cpp -lXInput -O3 -o Switch-Controller-Bridge.exe`
+
+This should genderate the executable `Switch-Controller-Bridge.exe` and you are already done with this part.
 
 
 ## Compile the Arduino code and upload it to the boards

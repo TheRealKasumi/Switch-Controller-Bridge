@@ -1,10 +1,4 @@
 .vscode/
-Win32
-Win64
-
-*.cbproj
-*.local
-*.res
-*.stat
-*Project1PCH1.h
 *.c4d
+*.exe
+*.obj
